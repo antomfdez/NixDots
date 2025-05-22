@@ -1,0 +1,27 @@
+font-family = FantasqueSansM Nerd Font
+font-size = 25
+
+initial-command=tmux
+
+gtk-single-instance = true
+theme = "Adventure"
+gtk-adwaita = false
+
+background-opacity = 0.9
+# background-blur-radius = 0
+# window-padding-color = extend-always
+
+gtk-titlebar = false
+
+cursor-style = bar
+
+confirm-close-surface = false
+
+copy-on-select = true
+
+image-storage-limit = 320000000
+
+mouse-hide-while-typing = true
+
+auto-update = check
+desktop-notifications = true
