@@ -1,5 +1,5 @@
-font-family = FantasqueSansM Nerd Font
-font-size = 14
+font-family = JetBrainsMono Nerd Font
+font-size = 21
 
 initial-command=tmux
 
@@ -13,7 +13,7 @@ background-opacity = 0.9
 
 gtk-titlebar = false
 
-cursor-style = bar
+cursor-style = block
 
 confirm-close-surface = false
 

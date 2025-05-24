@@ -169,9 +169,10 @@
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
-	pfetch-rs
-	floorp
-	gh
+	fzf
+        pfetch-rs
+        floorp
+        gh
         burpsuite
         luarocks
         delve
@@ -207,6 +208,7 @@
         spotify
     ];
     fonts.packages = with pkgs; [
+        nerd-fonts.jetbrains-mono
         nerd-fonts.fantasque-sans-mono
         nerd-fonts.ubuntu
     ];
