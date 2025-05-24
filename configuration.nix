@@ -101,6 +101,7 @@
     };
     services.picom = {
         enable = true;
+        fade = true;
         vSync = true;
     };
 
@@ -169,9 +170,8 @@
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
-	fzf
+	    fzf
         pfetch-rs
-        floorp
         gh
         burpsuite
         luarocks
@@ -192,7 +192,6 @@
         nwg-look
         dunst
         libnotify
-        font-awesome_5
         sysstat
         alsa-utils
         lm_sensors
@@ -206,11 +205,15 @@
         qemu
         openvpn
         spotify
+        i3status-rust
     ];
     fonts.packages = with pkgs; [
+    	nerd-fonts.fira-code
         nerd-fonts.jetbrains-mono
         nerd-fonts.fantasque-sans-mono
         nerd-fonts.ubuntu
+        font-awesome
+        font-awesome_5
     ];
 
     # Some programs need SUID wrappers, can be configured further or are

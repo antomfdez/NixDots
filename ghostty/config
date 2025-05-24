@@ -1,4 +1,4 @@
-font-family = JetBrainsMono Nerd Font
+font-family = FiraCode Nerd Font
 font-size = 21
 
 initial-command=tmux
