@@ -1,7 +1,7 @@
-font-family = FiraCode Nerd Font
-font-size = 21
+font-family = FantasqueSansM Nerd Font
+font-size = 14
 
-initial-command=tmux
+# initial-command=tmux
 
 gtk-single-instance = true
 theme = "Adventure"

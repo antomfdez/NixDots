@@ -163,14 +163,17 @@
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
     networking.extraHosts = ''
-  #  10.10.11.68   planning.htb
-  #  192.168.1.10 server.local
+#  10.10.11.68   planning.htb
+#  192.168.1.10 server.local
     '';
 
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
-	    fzf
+	openssl
+        fzf
+        sbcl
+        rlwrap
         pfetch-rs
         gh
         burpsuite
@@ -206,9 +209,11 @@
         openvpn
         spotify
         i3status-rust
+        kdePackages.kate
     ];
     fonts.packages = with pkgs; [
-    	nerd-fonts.fira-code
+        uw-ttyp0
+        nerd-fonts.fira-code
         nerd-fonts.jetbrains-mono
         nerd-fonts.fantasque-sans-mono
         nerd-fonts.ubuntu
